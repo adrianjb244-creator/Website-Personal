@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Efek Loading, Teks, dan Scroll</title>
+  <title>Art Visual | Portofolio Fotografi</title>
+  <title>Form Responsif Rata Tengah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- 1. LOADING -->
+<div id="loading">
+    <div class="loader"></div>
+</div>
+
+<!-- 2. ANIMASI TEKS -->
+<h class="text-anim" style="text-align:center; margin-top:100px;">
+</h>
+
+<!-- 3. SCROLL REVEAL -->
+<div class="section scroll">Section 1 (Scroll untuk lihat efek)</div>
+<div class="section scroll">Section 2</div>
+<div class="section scroll">Section 3</div>
+
+<script>
+/* ---------------------- */
+/* 1. Hilangkan LOADING */
+/* ---------------------- */
+setTimeout(() => {
+  document.getElementById("loading").style.display = "none";
+}, 2000);
+
+/* ---------------------- */
+/* 3. Efek SCROLL REVEAL */
+/* ---------------------- */
+window
+.addEventListener("scroll", function) {
+  const reveals = document.querySelectorAll(".scroll");}
+  for (let el of reveals) {
+    const top = el.getBoundingClientRect().top;}
+    if (top < window.innerHeight - 100) {
+      el.classList.add("muncul");
+    }
+</script>
+
+<body>
+  <header>
+    <h1>Art Visual</h1>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#karya">Karya</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+<header>
+  <div class="logo-container">
+     <img src="Logo Art Visual.png" alt="Logo Art Visual" class="logo">
+    <h1>Art Visual</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#karya">Karya</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section id="beranda" class="hero">
+  <video autoplay muted loop id="bg-video">
+    <source src="orang berjalan dipantai.mp4" type="video/mp4">
+  </video>
+  <div class="text-overlay,text-center,center-screen">
+    <h2 class="text-anim" style="text-align:center; margin-top:100px;">
+</h2>
+    <h2>Menangkap Cahaya, Menceritakan Cerita</h2>
+    <p>Selamat datang di Art Visual — ruang di mana fotografi menjadi seni yang berbicara. Saya menghadirkan kisah visual yang abadi melalui setiap jepretan kamera.</p>
+   
+  </section>
+  
+  <section id="tentang" class="about">
+    <div class="text-center">
+<h2 style="margin-top: 189px; margin-bottom: 0px; margin-left: 339px; margin-right: 340px;">Tentang Saya</h2>
+    <div class="text-center">
+      <p style="margin-top: 10px; margin-bottom: 40px; margin-left: 339px; margin-right: 10px;">
+ Halo! Saya Art Visual, seorang fotografer yang berfokus pada fotografi artistik.
+Bagi saya, setiap foto adalah bahasa tanpa kata cara untuk menangkap suasana, emosi, dan keindahan dalam satu bingkai cahaya.
+Saya menggabungkan gaya artistik dan modern minimalis untuk menciptakan karya yang tidak hanya indah dipandang, tetapi juga memiliki makna visual yang kuat.
+Seperti fotografi event weeding,ngaben dan acara lainnya, setiap karya yang dihasilkan adalah hasil dari perpaduan imajinasi, teknik, dan rasa.
+</p>
+  
+  </section>
+
+  <section id="karya" class="gallery">
+    <div class="text-center">
+      <h3 style="font-size: 50px;">Karya</h3>
+    <div class="gallery-grid">
+      <img src="Naga Banda.jpg" alt="Foto 1">
+      <img src="Naga Banda2.jpg" alt="Foto 2">
+      <img src="Lembu.jpg" alt="Foto 3">
+      <img src="Bade.jpg" alt="Foto 4">
+      <img src="Yadnya.jpg" alt="Foto 5">
+      <img src="Pitra Yadnya.jpg" alt="Foto 6">
+      <img src="Bade2.jpg" alt="Foto 7">
+      <img src="Bade3.jpg" alt="Foto 8">
+      <img src="Yadnya2.jpg" alt="Foto 9">
+      <img src="Yadnya3.jpg" alt="Foto 10">
+    </div>
+  </section>
+
+  <section id="layanan" class="services">
+    <div class="text-center">
+      <h4 style="font-size: 50px;">Layanan</h4>
+    <div class="services-list">
+      <div class="service-item">
+        <p style="margin-top: 120px; margin-bottom: 40px; margin-left: 339px; margin-right: 10px;"></p>
+       <h4 style="font-size: 25px;">Fotografi Wedding</h4>
+       <p style="border: 1px solid black; padding: 5px;"></p>
+        <p2>Menangkap kepribadian dan karakter unik setiap individu dengan pencahayaan dan tone yang elegan.</p2>
+      </div>
+      <div class="service-item">
+        <p style="margin-top: 120px; margin-bottom: 40px; margin-left: 339px; margin-right: 10px;"></p>
+        <h4 style="font-size: 25px;">Fotografi Produk</h4>
+        <p style="border: 1px solid black; padding: 5px;"></p>
+        <p2>Memberikan tampilan visual profesional untuk merek dan produk Anda dengan detail tinggi.</p2>
+      </div>
+      <div class="service-item">
+ <p style="margin-top: 120px; margin-bottom: 40px; margin-left: 339px; margin-right: 10px;"></p>
+      <h4 style="font-size: 25px;">Fotografi Lainnya</h4>
+        <p style="border: 1px solid black; padding: 5px;"></p>
+        <p2>Mengabadikan momen spesial dengan sentuhan artistik yang tak terlupakan.</p2>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="contact">
+    <div class="text-center">
+      <h5 style="font-size: 50px;">Hubungi Saya</h5>
+      
+    <body>
+  <form>
+    <input type="text" placeholder="Nama Lengkap" required>
+    <input type="email" placeholder="Email" required>
+    <input type="email" placeholder="No WhatsApp" required>
+    <textarea placeholder="Pesan Anda" rows="4"></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+  </section>
+
+  <footer>
+    &copy; 2025 Art Visual. Semua Hak Dilindungi.
+  </footer>
+</body>
+</html>
